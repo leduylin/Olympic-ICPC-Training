@@ -1,34 +1,30 @@
-package CodeForces;
-
 import java.io.*;
 import java.util.*;
 
-public class SaveMoreMice {
+public class PolycarpAndSumsOfSubsequences {
 
 	public static void main(String[] args) {
-		long t = nl();
+		int t = ni();
 		StringBuilder outBuffer = new StringBuilder();
 		while (t-- > 0) {
-			int k = ni(), n = ni();
-			List<Integer> mousePositions = new ArrayList<>();
-			for(int i = 0 ; i < n;i++) {
-				mousePositions.add(ni());
+			List<Integer> numbers = new ArrayList<>();
+			Map<Integer, Integer> numberMap = new HashMap<>();
+			for (int i = 0; i < 7; i++) {
+				int currentNum = ni();
+				numbers.add(currentNum);
+				numberMap.put(currentNum, 1);
 			}
-			mousePositions.sort((m1, m2) -> m2 - m1);
-			int count = 0, catPosition = 0;
-			for (int i = 0; i < n; i++) {
-				if (mousePositions.get(i) <= catPosition)
-					break;
-				count++;
-				catPosition += k - mousePositions.get(i);
-			}
-			outBuffer.append(count + "\n");
+			numbers.sort((n1, n2) -> n1 - n2);
+			long sum = numbers.get(6);
+			int num1 = numbers.get(0);
+			int num2 = numbers.get(1);
+			long num3 = sum - num1 - num2;
+			outBuffer.append(num1 + " " + num2 + " " + num3 + "\n");
 		}
 		System.out.println(outBuffer);
 	}
 
 	static InputStream is = System.in;
-
 	static byte[] inbuf = new byte[1 << 24];
 	static int lenbuf = 0, ptrbuf = 0;
 
@@ -57,10 +53,6 @@ public class SaveMoreMice {
 		while ((b = readByte()) != -1 && isSpaceChar(b))
 			;
 		return b;
-	}
-
-	static float nf() {
-		return Float.parseFloat(ns());
 	}
 
 	static double nd() {
@@ -129,5 +121,4 @@ public class SaveMoreMice {
 			b = readByte();
 		}
 	}
-
 }

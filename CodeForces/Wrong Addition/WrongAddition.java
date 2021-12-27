@@ -1,37 +1,62 @@
-package CodeForces;
-
 import java.io.*;
 import java.util.*;
 
-public class MakeItDivisibleBy25 {
+public class WrongAddition {
 
 	public static void main(String[] args) {
-		int n = ni();
+		int t = ni();
 		StringBuilder outBuffer = new StringBuilder();
-		while (n-- > 0) {
-			long num = nl();
-			if (num % 25 == 0) {
-				outBuffer.append(0 + "\n");
-			} else {
-				String numTypeString = String.valueOf(num);
-				int[] numSplit = new int[numTypeString.length()];
-				for (int i = 0; i < numSplit.length; i++) {
-					numSplit[i] = Integer.valueOf(numTypeString.charAt(i) + "");
+		while (t-- > 0) {
+			char[] firstNum = ns().toCharArray();
+			char[] res = ns().toCharArray();
+			int[] a = new int[firstNum.length];
+			int[] s = new int[res.length];
+			for (int i = 0; i < a.length; i++) {
+				a[i] = Integer.valueOf(firstNum[i] + "");
+			}
+			for (int i = 0; i < s.length; i++) {
+				s[i] = Integer.valueOf(res[i] + "");
+			}
+			List<Integer> bSplit = new ArrayList<>();
+			boolean canFind = true;
+			int i = a.length - 1, j = s.length - 1;
+			for (; i >= 0 && j >= 0;) {
+				if (a[i] <= s[j]) {
+					bSplit.add(s[j] - a[i]);
+				} else {
+					j--;
+					if (j < 0) {
+						canFind = false;
+						break;
+					}
+					int temp = s[j] * 10 + s[j + 1] - a[i];
+					if (temp >= 10 || temp < 0) {
+						canFind = false;
+						break;
+					}
+					bSplit.add(temp);
 				}
-
-				int minTurn = Integer.MAX_VALUE;
-				int count = 0;
-				for (int i = 0; i < numSplit.length - 1; i++) {
-					for (int j = i + 1; j < numSplit.length; j++) {
-						int currentNum = numSplit[i] * 10 + numSplit[j];
-						if (currentNum % 25 == 0) {
-							count = (j - i - 1) + (numSplit.length - 1 - j);
-							minTurn = Math.min(minTurn, count);
-						}
+				i--;
+				j--;
+			}
+			if (i >= 0 || !canFind) {
+				outBuffer.append("-1");
+			} else {
+				if (j >= 0) {
+					for (; j >= 0; j--) {
+						bSplit.add(s[j]);
 					}
 				}
-				outBuffer.append(minTurn + "\n");
+				int k = bSplit.size() - 1;
+				for (; k >= 0; k--) {
+					if (bSplit.get(k) > 0)
+						break;
+				}
+				for (; k >= 0; k--) {
+					outBuffer.append(bSplit.get(k));
+				}
 			}
+			outBuffer.append("\n");
 		}
 		System.out.println(outBuffer);
 	}
