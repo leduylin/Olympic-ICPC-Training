@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="A Prank"/>
+	<classpathentry kind="src" path="ABC String"/>
+	<classpathentry kind="src" path="Alice, Bob and Chocolate"/>
+	<classpathentry kind="src" path="Alyona and Mex"/>
+	<classpathentry kind="src" path="Amr and The Large Array"/>
+	<classpathentry kind="src" path="Array Eversion"/>
+	<classpathentry kind="src" path="Benches"/>
+	<classpathentry kind="src" path="Binary Palindromes"/>
+	<classpathentry kind="src" path="Boxes Packing"/>
+	<classpathentry kind="src" path="Caisa and Sugar"/>
+	<classpathentry kind="src" path="Caisa and Suger"/>
+	<classpathentry kind="src" path="Chess Tourney"/>
+	<classpathentry kind="src" path="Choosing Teams"/>
+	<classpathentry kind="src" path="Circle of Monsters"/>
+	<classpathentry kind="src" path="Coffee Break"/>
+	<classpathentry kind="src" path="Collecting Packages"/>
+	<classpathentry kind="src" path="Correct Solution"/>
+	<classpathentry kind="src" path="Ehab Is an Odd Person"/>
+	<classpathentry kind="src" path="Elections"/>
+	<classpathentry kind="src" path="Flag Day"/>
+	<classpathentry kind="src" path="Football Kit"/>
+	<classpathentry kind="src" path="Forbidden Subsequence"/>
+	<classpathentry kind="src" path="Fruits"/>
+	<classpathentry kind="src" path="Game with string"/>
+	<classpathentry kind="src" path="GameWithString"/>
+	<classpathentry kind="src" path="Guilty — to the kitchen!"/>
+	<classpathentry kind="src" path="K-th Largest Value"/>
+	<classpathentry kind="src" path="Kirill And The Game"/>
+	<classpathentry kind="src" path="Lala Land and Apple Trees"/>
+	<classpathentry kind="src" path="Less or Equal"/>
+	<classpathentry kind="src" path="Life of a Flower"/>
+	<classpathentry kind="src" path="Long Number"/>
+	<classpathentry kind="src" path="Maria Breaks the Self-isolation"/>
+	<classpathentry kind="src" path="Micro-World"/>
+	<classpathentry kind="src" path="Missing Bigram"/>
+	<classpathentry kind="src" path="MUH and Sticks"/>
+	<classpathentry kind="src" path="New Bus Route"/>
+	<classpathentry kind="src" path="Next Test"/>
+	<classpathentry kind="src" path="Page Numbers"/>
+	<classpathentry kind="src" path="Polycarp and Sums of Subsequences"/>
+	<classpathentry kind="src" path="Potions Homework"/>
+	<classpathentry kind="src" path="Reachable Numbers"/>
+	<classpathentry kind="src" path="Sale"/>
+	<classpathentry kind="src" path="Save More Mice"/>
+	<classpathentry kind="src" path="Shifting Stacks"/>
+	<classpathentry kind="src" path="Shushi for two"/>
+	<classpathentry kind="src" path="Sport Mafia"/>
+	<classpathentry kind="src" path="Square String"/>
+	<classpathentry kind="src" path="Squares And Cubes"/>
+	<classpathentry kind="src" path="Sweet Problem"/>
+	<classpathentry kind="src" path="Team Olympiad"/>
+	<classpathentry kind="src" path="Two Teams Composing"/>
+	<classpathentry kind="src" path="Two TVs"/>
+	<classpathentry kind="src" path="Vanya and Lanterns"/>
+	<classpathentry kind="src" path="Verse For Santa"/>
+	<classpathentry kind="src" path="Vicious Keyboard"/>
+	<classpathentry kind="src" path="ViciousKeyBoard"/>
+	<classpathentry kind="src" path="Wrong Addition"/>
+	<classpathentry kind="src" path="Yaroslav and Permutations"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

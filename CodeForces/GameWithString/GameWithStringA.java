@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GameWithString {
+public class GameWithStringA {
 
 	public static void main(String[] args) {
 		String givenString = ns();
