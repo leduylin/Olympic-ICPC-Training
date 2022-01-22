@@ -21,7 +21,8 @@ int main()
         else if(status == "lower")
         {
             right = current_number - 1;
-        }else{
+        }else
+        {
             break;
         }
     }
