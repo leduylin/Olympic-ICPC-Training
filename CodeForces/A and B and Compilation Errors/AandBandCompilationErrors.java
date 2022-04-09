@@ -4,10 +4,29 @@ import java.util.*;
 public class AandBandCompilationErrors {
 
 	public static void main(String[] args) {
-		usingSort();
+		//usingSort();
+		Sum();
 	}
 
 	static InputReader reader = new InputReader(System.in);
+
+	static void Sum() {
+		int n = reader.nextInt();
+		long firstSum = 0, secondSum = 0, thirdSum = 0;
+
+		for (int i = 0; i < n; i++) {
+			firstSum += reader.nextInt();
+		}
+
+		for (int i = 0; i < n - 1; i++) {
+			secondSum += reader.nextInt();
+		}
+
+		for (int i = 0; i < n - 2; i++) {
+			thirdSum += reader.nextInt();
+		}
+		System.out.println((firstSum - secondSum) + "\n" + (secondSum - thirdSum));
+	}
 
 	static void usingSort() {
 		int n = reader.nextInt();
@@ -99,7 +118,7 @@ public class AandBandCompilationErrors {
 				break;
 			}
 		}
-		
+
 		System.out.println(firstE + "\n" + secondE);
 
 	}
